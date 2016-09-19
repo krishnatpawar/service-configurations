@@ -4,14 +4,6 @@ server:
 management:
   port: 8993
 
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-  health:
-    sensitive: false
-
 eureka:
   client:
     registerWithEureka: true
@@ -23,4 +15,20 @@ eureka:
     healthCheckUrlPath: /health
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-        
+      
+logging:
+  level: 
+    com.netflix.discovery: 'TRACE'
+    org.springframework.cloud: 'TRACE'
+    org.springframework.boot: 'TRACE'
+    org.springframework.context: 'TRACE'
+    org.springframework.integration: 'TRACE'
+    
+zuul:
+  ignoredServices: "*"
+  routes:
+    transactions-api-service: /**
+    accounts-api-service: /**
+    resource:
+      stripPrefix: false
+      
