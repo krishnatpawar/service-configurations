@@ -28,7 +28,7 @@ zuul:
   ignoredServices: "*"
   routes:
     transactions-api-service: /**
-    accounts-api-service: /**
-#    resource:
-#      stripPrefix: false
+    accounts-api-service: /accounts/**
+    resource:
+      stripPrefix: false
       
