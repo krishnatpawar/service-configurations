@@ -29,6 +29,6 @@ zuul:
   routes:
     transactions-api-service: /**
     accounts-api-service: /**
-    resource:
-      stripPrefix: false
+#    resource:
+#      stripPrefix: false
       
