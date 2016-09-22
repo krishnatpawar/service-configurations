@@ -1,0 +1,20 @@
+
+server:
+  port: 10000
+
+turbine:
+  appConfig: accounts-api-service,transactions-api-service
+  instanceUrlSuffix: /hystrix.stream
+  clusterNameExpression: new String("default")
+
+logging:
+  level:
+    com.netflix.turbine: 'TRACE'
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
