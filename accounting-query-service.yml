@@ -23,7 +23,7 @@ logging:
         org.springframework: INFO
         org.axonframework: INFO
         payments: INFO
-    file: ./logs/accounting-service.log
+    file: ./logs/accounting-query-service.log
     
 eureka:
   client:
