@@ -1,8 +1,8 @@
 Iserver:
-  port: 9098
+  port: 12000
   
 management:
-    port: 9099
+    port: 12001
     address: 127.0.0.1
   
 spring:
