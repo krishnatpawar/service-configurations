@@ -1,4 +1,4 @@
-Iserver:
+server:
   port: 12000
   
 management:
