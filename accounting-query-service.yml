@@ -17,7 +17,7 @@ spring:
         username: guest
         password: guest
     datasource:
-        url: jdbc:h2:~/accountsdb
+        url: jdbc:h2:~/accountsschema
         username: sa
         password:
       
