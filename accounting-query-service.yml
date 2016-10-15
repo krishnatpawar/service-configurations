@@ -9,8 +9,6 @@ spring:
     application:
         exchange: payments.events.fanout.exchange
         queue: accounts.query.queue
-        eventsCollectionName: events
-        snapshotCollectionName: snapshots
     rabbitmq:
         hostname: localhost
         username: guest
