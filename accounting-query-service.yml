@@ -9,7 +9,7 @@ spring:
     application:
         exchange: payments.events.fanout.exchange
         queue: accounts.query.queue
-        databaseName: accountsdb
+        #databaseName: accountsdb
         eventsCollectionName: events
         snapshotCollectionName: snapshots
     rabbitmq:
