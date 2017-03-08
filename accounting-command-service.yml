@@ -14,8 +14,8 @@ spring:
         snapshotCollectionName: snapshots
     rabbitmq:
         hostname: localhost
-        username: guest
-        password: guest
+        username: test
+        password: password
       
 logging:
     level:
