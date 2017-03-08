@@ -14,11 +14,12 @@ spring:
         snapshotCollectionName: snapshots
     rabbitmq:
         hostname: localhost
-        username: guest
-        password: guest
+        username: test
+        password: password
     data:
         mongodb:
-            uri: mongodb://localhost:27017/paymentsdb
+#            uri: mongodb://localhost:27017/paymentsdb
+            uri: mongodb://mongodb:27017/paymentsdb
     datasource:
         url: jdbc:h2:~/paymentsdb
         username: sa
