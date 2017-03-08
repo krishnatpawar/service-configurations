@@ -13,7 +13,8 @@ spring:
         eventsCollectionName: events
         snapshotCollectionName: snapshots
     rabbitmq:
-        hostname: localhost
+#        hostname: localhost
+        hostname: rabbitmq
         username: test
         password: password
     data:
